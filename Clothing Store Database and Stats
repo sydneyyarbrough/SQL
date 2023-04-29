@@ -1,0 +1,18 @@
+/**Sydneyboutique:
+Skirts (4)($60)
+Kitten Heels (3)($45)
+T-shirts(5)($30)
+Jeans (7)($75)
+**/
+
+CREATE TABLE Sydneyboutique (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price NUMERIC);
+
+INSERT INTO Sydneyboutique VALUES (1, "Skirts", 4, 60);
+INSERT INTO Sydneyboutique VALUES (2, "Kitten Heels", 3,45);
+INSERT INTO Sydneyboutique VALUES (3, "T-shirts", 5,30);
+INSERT INTO Sydneyboutique VALUES (4, "Jeans", 7,75);
+SELECT * FROM SydneyboutiquE ORDER by price;
+
+Select * FROM Sydneyboutique WHERE price<50 ORDER BY quantity;
+
+SELECT name, sum(quantity) FROM Sydneyboutique GROUP BY quantity
